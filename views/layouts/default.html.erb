@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="<%= I18n.locale %>">
+
+<head>
+  <%= render 'shared/page_header' %>
+  <%= themeable_stylesheet_link_tag :theme %>
+  <%= themeable_javascript_include_tag :theme %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><%=h page_title %></title>
+</head>
+
+<body>
+
+<header>
+  <div id="logo">
+    <h1><span id="logo-inner"><%= link_to(this_blog.blog_name, this_blog.base_url) %></span></h1>
+    <p class="desc">
+      <%#= this_blog.blog_subtitle %>
+      静止画M@Dを中心にMMDとか、ニコマスを楽しんで気になったことを書き綴っているサイトです、Web新技術投入したがりなのでブラウザは最新版推奨です
+    </p>
+  </div>
+  <nav class='navbar navbar-inverse'>
+    <div class='navbar-inner'>
+      <ul class='nav'>
+        <%= content_tag(:li, link_to('Home', this_blog.base_url))%>
+        <%= content_tag(:li, link_to('Articles', '/archives/'))%>
+        <%= content_tag(:li, link_to('Link', "/links/"))%>
+        <li><a href="/pages/about-me">About me</a></li>
+        <li><a href="/pages/about-this-site">About This Site</a></li>
+        <li><a href="/pages/creation">Creation</a></li>
+        <li><a href="/pages/web_seminor">Web Seminor</a></li>
+        <li><a href="/pages/programs">Programs</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<section id="external">
+  <div id='main' class="main">
+    <div class="articles">
+      <%= yield %>
+    </div>
+    <div id='sidebar'>
+      <h3 class='sidebar-title'>m@d scene</h3>
+      <div class='static-body'>
+        <ul class="snav">
+          <li><a href='http://www.ujiarmy.net/' class="external" target="_blank">宇治軍団</a></li>
+          <li><a href='http://stairway.sakura.ne.jp/madwiki/' class="external" target="_blank">MadWiki -Imagination-</a></li>
+          <li><a href="http://amvnews.ru/index.php">AMV News</a></li>
+          <li><a href="http://www.bilibili.tv/">bilibili動画</a></li>
+          <li><a href="http://erogetrailers.com/">エロゲトレーラー</a></li>
+          <li><a href="http://double-eight.net/mug/" class="external" target="_blank">M@DEinUnderGround</a></li>
+          <li><a href='http://ccsx.web.fc2.com/whoismad.htm' class="external" target="_blank">M@D黒歴史(広東語)</a></li>
+        </ul>
+      </div>
+      <%= render_sidebars %>
+      <h3 class='sidebar-title'>About me</h3>
+      <div class='static-body'>
+        <dl class="snav">
+          <dt>Name</dt>
+          <dd>ばばんばーん（ばばん）</dd>
+          <dt>Twitter</dt>
+          <dd><a href="https://twitter.com/baban">https://twitter.com/baban</a></dd>
+          <dt>Mail</dt>
+          <dd><a href="mailto:babanba.n@gmail.com">babanba.n@gmail.com</a></dd>
+          <dt>Github</dt>
+          <dd><a href="https://github.com/baban">https://github.com/baban</a></dd>
+        </dl>
+        <p class="etc"><a href="http://babanba-n.iobb.net/blog/pages/about_me">その他</a></p>
+      </div>
+      <h3 class='sidebar-title'>EventCalendar</h3>
+      <div class='static-body'>
+        <iframe src="https://www.google.com/calendar/embed?title=%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC&amp;showTitle=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=450&amp;wkst=1&amp;bgcolor=%23993300&amp;src=jh3rt776m0mfdkmq15mhhlj72c%40group.calendar.google.com&amp;color=%23B1365F&amp;ctz=Asia%2FTokyo" style=" border:solid 1px #777 " width="180" height="450" frameborder="0" scrolling="no"></iframe>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+</section>
+
+<footer>
+  <p class="legal">
+  <%= t(".powered_by_html", powered_by: link_to('Publify', 'https://publify.github.io')) %>
+  </p>
+</footer>
+
+</body>
+</html>
