@@ -112,6 +112,12 @@ nav.navbar.navbar-inverse .navbar-inner ul > li > a:hover {
   border:solid 1px #030000;
 }
 
+@media screen and (max-width: 720px) {
+	#external {
+    width:calc(100% - 1.5em);
+	}
+}
+
 #external:after {
   content:"";
   display:block;
