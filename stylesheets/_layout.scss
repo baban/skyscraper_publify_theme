@@ -4,7 +4,7 @@ header {
 
 #logo {
   min-height: 80px;
-  background-image: url("header-back.png");
+  background-image: url("../../images/theme/header-back.png");
   background-position: right bottom;
   background-repeat: no-repeat;
   padding-top: 0.7em;
@@ -45,11 +45,7 @@ nav.navbar.navbar-inverse .navbar-inner {
       &:hover {
         color: rgba(255, 255, 255, 1);
         background-color: rgba(255, 255, 255, 0.2);
-        -webkit-transition-property: color;
-        -moz-transition-property: color;
         transition-property: color;
-        -webkit-transition-duration: 0.5s;
-        -moz-transition-duration: 0.5s;
         transition-duration: 0.5s;
       }
     }

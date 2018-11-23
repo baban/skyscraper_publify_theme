@@ -308,7 +308,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #cfc8c5;
-  background-image: url("background.png");
+  background-image: url("../../images/theme/background.png");
   background-repeat: no-repeat;
   background-position: right 150px;
   background-attachment: fixed; }
@@ -340,7 +340,7 @@ header {
 
 #logo {
   min-height: 80px;
-  background-image: url("header-back.png");
+  background-image: url("../../images/theme/header-back.png");
   background-position: right bottom;
   background-repeat: no-repeat;
   padding-top: 0.7em; }
@@ -511,14 +511,12 @@ nav.pagination {
     line-height: 1.1;
     background-repeat: no-repeat;
     background-position: left bottom;
-    background-image: url("sidebar-title-line.png");
+    background-image: url("../../images/theme/sidebar-title-line.png");
     text-shadow: 3px 3px 0 rgba(50, 0, 50, 0.3); }
   #sidebar dl {
     margin: 0px; }
   #sidebar p.etc {
     text-align: right; }
-  #sidebar li {
-    list-style-image: url("images/icon.png"); }
   #sidebar div.meta {
     text-align: right;
     font-size: 12px;

@@ -6,7 +6,7 @@
     line-height: 1.1;
     background-repeat: no-repeat;
     background-position: left bottom;
-    background-image: url("sidebar-title-line.png");
+    background-image: url("../../images/theme/sidebar-title-line.png");
     text-shadow: 3px 3px 0 rgba(50, 0, 50, 0.3);
   }
   dl {
@@ -14,9 +14,6 @@
   }
   p.etc {
     text-align: right;
-  }
-  li {
-    list-style-image: url("images/icon.png");
   }
   div.meta {
     text-align: right;
