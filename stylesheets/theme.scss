@@ -1,10 +1,10 @@
 @import "fonts/Jacques_Francois/stylesheet.css";
 @import "fonts/Geo/stylesheet.css";
 @import "fonts/Miniver/stylesheet.css";
-@import "normalize.css";
+@import "normalize";
 
 body {
-  margin: 1px;
+  margin: 0;
   padding: 0;
   background-color: #cfc8c5;
   background-image: url("background.png");
