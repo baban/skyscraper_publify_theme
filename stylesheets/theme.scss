@@ -29,6 +29,10 @@ h3 {
   font-size: 1.5em;
 }
 
+a {
+  text-decoration: none;
+}
+
 table.data {
   border: solid 4px #000;
   th, td {
@@ -121,10 +125,12 @@ nav.navbar.navbar-inverse .navbar-inner {
 }
 
 .articles {
-  width: -webkit-calc(100% - 16em);
   width: calc(100% - 16em);
   float: left;
   clear: none;
+  a {
+    text-decoration: underline;
+  }
 }
 
 article {
@@ -148,7 +154,6 @@ article > * {
   clear: none;
   float: right;
   h3 {
-    &:before {}
     padding: 0 0 3px 40px;
     margin: 4px 0 3px 0;
     line-height: 1.1;
@@ -165,7 +170,6 @@ article > * {
   }
   li {
     list-style-image: url("images/icon.png");
-    a:hover {}
   }
 }
 
@@ -196,8 +200,6 @@ footer {
   width: 100%;
   color: white;
   background-color: black;
-  background: -moz-linear-gradient(#494949, #030000);
-  background: -webkit-linear-gradient(#494949, #030000);
   background: linear-gradient(#494949, #030000);
   border: none 1px #000;
   border-top-style: solid;
@@ -206,7 +208,7 @@ footer {
     margin: 0 0.5em;
   }
   p {
-    margin: 0;
+    margin: 0 1em;
     padding: 0;
     text-shadow: 0 0 1px white;
     font-family: 'JacquesFrancois_Regular',serif;

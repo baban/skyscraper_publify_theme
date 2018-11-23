@@ -329,6 +329,9 @@ h2 {
 h3 {
   font-size: 1.5em; }
 
+a {
+  text-decoration: none; }
+
 table.data {
   border: solid 4px #000; }
   table.data th, table.data td {
@@ -402,6 +405,8 @@ nav.navbar.navbar-inverse .navbar-inner {
   width: calc(100% - 16em);
   float: left;
   clear: none; }
+  .articles a {
+    text-decoration: underline; }
 
 article {
   border: none 1px #ccc;
@@ -464,7 +469,7 @@ footer {
   footer #creator {
     margin: 0 0.5em; }
   footer p {
-    margin: 0;
+    margin: 0 1em;
     padding: 0;
     text-shadow: 0 0 1px white;
     font-family: 'JacquesFrancois_Regular',serif; }
