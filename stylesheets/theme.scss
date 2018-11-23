@@ -102,6 +102,8 @@ nav.navbar.navbar-inverse .navbar-inner {
 }
 
 #external {
+  flex-direction: row;
+  align-items: stretch;
   width: calc(100% - 8em);
   margin: 0 auto;
   background-color: #fff;
@@ -120,14 +122,25 @@ nav.navbar.navbar-inverse .navbar-inner {
   }
 }
 
+@media screen and (min-width: 1000px) {
+  #main {
+    display: flex;
+  }
+  
+  .articles {
+    flex: 2;
+  }
+  
+  #sidebar {
+    flex: 1;
+  }
+}
+
 #main {
   margin: 0 1em;
 }
 
 .articles {
-  width: calc(100% - 16em);
-  float: left;
-  clear: none;
   a {
     text-decoration: underline;
   }
@@ -148,11 +161,9 @@ article > * {
   margin-left: 0.8em;
   margin-right: 0.8em;
 }
-
 #sidebar {
   width: 15em;
-  clear: none;
-  float: right;
+  max-width: 15em;
   h3 {
     padding: 0 0 3px 40px;
     margin: 4px 0 3px 0;
