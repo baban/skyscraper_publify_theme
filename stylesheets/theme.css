@@ -541,9 +541,10 @@ div.meta {
   font-size: 12px;
   line-height: 1.1em; }
 
-.paginate {
-  text-align: center; }
-  .paginate span.page {
+nav.pagination {
+  text-align: center;
+  margin-bottom: 14px; }
+  nav.pagination span.page {
     border: solid 1px #aaa;
     padding: 5px 5px;
     margin: 0 4px; }
