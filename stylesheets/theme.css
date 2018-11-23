@@ -519,7 +519,7 @@ article {
     background: #777;
     box-shadow: 0 15px 10px #777;
     -webkit-transform: rotate(-3deg);
-    transform: rotate(-3deg); }
+            transform: rotate(-3deg); }
   article:after {
     z-index: -1;
     position: absolute;
@@ -531,10 +531,8 @@ article {
     max-width: 300px;
     background: #777;
     box-shadow: 0 15px 10px #777;
-    -webkit-transform: rotate(-3deg);
-    transform: rotate(-3deg);
     -webkit-transform: rotate(3deg);
-    transform: rotate(3deg);
+            transform: rotate(3deg);
     right: 10px;
     left: auto; }
 
