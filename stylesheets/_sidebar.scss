@@ -1,0 +1,27 @@
+#sidebar {
+  max-width: 15em;
+  h3 {
+    padding: 0 0 3px 40px;
+    margin: 4px 0 3px 0;
+    line-height: 1.1;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-image: url("sidebar-title-line.png");
+    text-shadow: 3px 3px 0 rgba(50, 0, 50, 0.3);
+  }
+  dl {
+    margin: 0px;
+  }
+  p.etc {
+    text-align: right;
+  }
+  li {
+    list-style-image: url("images/icon.png");
+  }
+  div.meta {
+    text-align: right;
+    font-size: 12px;
+    line-height: 1.1em;
+  }
+}
+
