@@ -1,0 +1,17 @@
+@mixin before-clearfix {
+  &:before {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+  }
+}
+
+@mixin after-clearfix {
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+  }
+}
