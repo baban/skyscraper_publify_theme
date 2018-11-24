@@ -355,10 +355,9 @@ header {
   #logo p.desc {
     margin: 0 0 0 1em;
     font-weight: bold;
-    opacity: 0.9;
     font-size: 10pt;
     font-family: sans-serif;
-    color: white; }
+    color: rgba(255, 255, 255, 0.9); }
 
 nav.navbar.navbar-inverse .navbar-inner {
   background: linear-gradient(120deg, #3f3f39, #030000); }
@@ -380,7 +379,6 @@ nav.navbar.navbar-inverse .navbar-inner {
         transition-duration: 0.5s; }
 
 .navbar .nav > li {
-  font-family: 'JacquesFrancois_Regular';
   border-left: 1px solid #111111;
   border-right: 1px solid #444444; }
   .navbar .nav > li > a {
@@ -405,11 +403,7 @@ nav.navbar.navbar-inverse .navbar-inner {
 
 @media screen and (max-width: 720px) {
   #external {
-    width: calc(100% - 1.5em); }
-  .articles {
-    width: 98%; }
-  #sidebar {
-    width: 98%; } }
+    width: calc(100% - 1.5em); } }
 
 @media screen and (min-width: 1000px) {
   #main {
@@ -443,8 +437,7 @@ footer {
   footer p {
     margin: 0 1em;
     padding: 0;
-    text-shadow: 0 0 1px white;
-    font-family: 'JacquesFrancois_Regular',serif; }
+    text-shadow: 0 0 1px white; }
     footer p a {
       text-shadow: 0 0 1px blue; }
 
