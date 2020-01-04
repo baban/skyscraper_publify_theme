@@ -24,9 +24,10 @@
       <ul class='nav'>
         <%= content_tag(:li, link_to('Top', this_blog.base_url))%>
         <li><a href="/pages/about-me">サイト・管理人紹介</a></li>
-        <%= content_tag(:li, link_to('過去記事', '/archives/'))%>
-        <%= content_tag(:li, link_to('静止画MADリンク集', "/links/"))%>
+        <%= content_tag(:li, link_to('過去記事', '/archives/')) %>
+        <%= content_tag(:li, link_to('静止画MAD Wiki', "/wiki/"))%>
         <li><a href="/creation/">制作物・文書</a></li>
+        <%= content_tag(:li, link_to('静止画MADリンク集', "/links/"))%>
       </ul>
     </div>
   </nav>
@@ -45,9 +46,6 @@
           <li><a href="http://amvnews.ru/index.php" class="external" target="_blank">AMV News</a></li>
           <li><a href="http://www.bilibili.tv/" class="external" target="_blank">bilibili動画</a></li>
           <li><a href="http://erogetrailers.com/" class="external" target="_blank">エロゲトレーラー</a></li>
-          <li><a href="http://double-eight.net/mug/" class="external" target="_blank">M@DEinUnderGround</a></li>
-          <li><a href='http://ccsx.web.fc2.com/whoismad.htm' class="external" target="_blank">M@D黒歴史(広東語)</a></li>
-          <li><a href='http://stairway.sakura.ne.jp/madwiki/' class="external" target="_blank">MadWiki -Imagination-</a></li>
         </ul>
       </div>
       <%= render_sidebars %>
