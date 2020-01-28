@@ -6,3 +6,11 @@
 @import "layout";
 @import "articles";
 @import "sidebar";
+
+.event-banner {
+  margin:0.5em auto;
+  text-align:center;
+}
+.event-banner a img {
+  border:solid 2px blue !important;
+}
