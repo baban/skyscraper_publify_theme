@@ -520,6 +520,7 @@ nav.pagination {
   text-align:center;
 }
 .event-banner a img {
+  width:728px;
   max-width:100%;
   height:auto;
   border:solid 2px blue !important;
