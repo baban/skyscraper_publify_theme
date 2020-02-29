@@ -488,6 +488,10 @@ article {
     line-height: 1;
     padding: 4px; }
 
+.post p.auth {
+  text-align: right;
+  padding-right: 1em; }
+
 nav.pagination {
   text-align: center;
   margin-bottom: 14px; }
@@ -516,13 +520,8 @@ nav.pagination {
     line-height: 1.1em; }
 
 .event-banner {
-  margin:0.5em auto;
-  text-align:center;
-}
+  margin: 0.5em auto;
+  text-align: center; }
+
 .event-banner a img {
-  width:728px;
-  max-width:100%;
-  height:auto;
-  border:solid 2px blue !important;
-}
-    
+  border: solid 2px blue !important; }

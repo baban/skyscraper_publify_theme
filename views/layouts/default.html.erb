@@ -26,6 +26,7 @@
         <li><a href="/pages/about-me">サイト・管理人紹介</a></li>
         <%= content_tag(:li, link_to('過去記事', '/archives/')) %>
         <%= content_tag(:li, link_to('静止画MAD Wiki', "/wiki/"))%>
+        <%= content_tag(:li, link_to('MADイベントカレンダー', "/event_calender/"))%>
         <li><a href="/creation/">制作物・文書</a></li>
         <%= content_tag(:li, link_to('静止画MADリンク集', "/links/"))%>
       </ul>
@@ -37,8 +38,8 @@
   <div id='main' class="main">
     <div class="articles">
       <div class="event-banner">
-        <a href="/mvm/2019/?tracker=site" target="_blank"><img src="/mvm/2019/img/big_banner.png" alt="あなたが選ぶ、静止画M@D対象2019" /></a>
-        <p>イベント開催中です！</p>
+        <a href="/mvm/2019/?tracker=site" target="_blank"><img src="/mvm/2019/img/big_banner.png" alt="あなたが選ぶ、静止画M@D大賞2019" /></a>
+        <p>イベント終了しました！ありがとうございます！</p>
       </div>
       <hr />
       <%= yield %>
@@ -51,6 +52,7 @@
           <li><a href="http://amvnews.ru/index.php" class="external" target="_blank">AMV News</a></li>
           <li><a href="http://www.bilibili.tv/" class="external" target="_blank">bilibili動画</a></li>
           <li><a href="http://erogetrailers.com/" class="external" target="_blank">エロゲトレーラー</a></li>
+          <li><a href="/mvm/2019/" class="external" target="_blank">静止画M@D大賞2019</a></li>
         </ul>
       </div>
       <%= render_sidebars %>
