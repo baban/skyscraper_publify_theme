@@ -25,7 +25,7 @@
         <%= content_tag(:li, link_to('Top', this_blog.base_url))%>
         <li><a href="/pages/about-me">サイト・管理人紹介</a></li>
         <%= content_tag(:li, link_to('過去記事', '/archives/')) %>
-        <%= content_tag(:li, link_to('静止画MAD Wiki', "/wiki/"))%>
+        <%= content_tag(:li, link_to('MAD Wiki', "/wiki/"))%>
         <li><a href="/pages/event_calener">MADイベントカレンダー</a></li>
         <li><a href="/creation/">制作物・文書</a></li>
         <%= content_tag(:li, link_to('静止画MADリンク集', "/links/"))%>
@@ -37,13 +37,6 @@
 <section id="external">
   <div id='main' class="main">
     <div class="articles">
-      <div style="border:1px #ddd; border-bottom-style:dashed;">
-        <p class="event-logo">
-          <a href="http://babanba-n.iobb.net/mvm/2021/?t=sb" target="_blank">
-            <img src="/mvm/2021/img/banner.png" alt="あなたが選ぶ静止画M@D大賞2021" style="border:2px blue; border-style:solid;" />
-          </a>
-        </p>
-      </div>
       <%= yield %>
     </div>
     <div id='sidebar'>
